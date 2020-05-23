@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "react-bootstrap/Navbar";
+import AboutSetion from "./AboutSection";
+import ProjectsTable from "./ProjectsTable";
+
+function HeaderNav() {
+  return (
+    <Navbar bg="dark" expand="lg" sticky="top" variant="dark">
+      <Navbar.Brand>David Dimmett</Navbar.Brand>
+    </Navbar>
+  );
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeaderNav />
+
+      <AboutSetion />
+      <ProjectsTable />
     </div>
   );
 }
