@@ -54,8 +54,10 @@ export default function ProjectsTable() {
           <Col>
             <h1 id="projects">Projects</h1>
             <hr />
-            <h3>Some things I'm working on, or have worked on.</h3>
-            <Table striped bordered hover>
+            <p className="lead">
+              Some things I'm working on, or have worked on.
+            </p>
+            <Table striped bordered hover responsive>
               <thead>
                 <tr>
                   <th scope="col">Name</th>
