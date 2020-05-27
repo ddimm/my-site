@@ -10,14 +10,7 @@ export default function ProjectsTable() {
   const [repoInfo, setRepoInfo] = useState([]);
   const [failed, setFailed] = useState(false);
   useEffect(() => {
-    fetch(
-      `https://api.github.com/users/${process.env.REACT_APP_GITHUB_USER}/repos`,
-      {
-        headers: {
-          Authorization: `token ${process.env.REACT_APP_GITHUB_TOKEN}`,
-        },
-      }
-    )
+    fetch("https://6bcf8c6cd288dbac7367833f912a9dc2.balena-devices.com/")
       .then((respObject: Response) => {
         return respObject.json();
       })
