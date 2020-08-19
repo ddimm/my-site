@@ -4,6 +4,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
+import headshot from "./headshot.jpg";
 const resume_spring_2020 = require("./resume_spring_2020.pdf");
 export default function AboutSection() {
   return (
@@ -12,6 +14,7 @@ export default function AboutSection() {
         <Col>
           <h1 id="about">About</h1>
           <hr />
+          <Image src={headshot} thumbnail alt="me" />
           <p className="lead">
             I'm David, a computer science major in the University of Virginia
             School of Engineering and Applied Science. I have experience in a
