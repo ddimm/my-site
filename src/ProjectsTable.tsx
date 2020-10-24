@@ -10,7 +10,7 @@ export default function ProjectsTable() {
   const [repoInfo, setRepoInfo] = useState([]);
   const [failed, setFailed] = useState(false);
   useEffect(() => {
-    fetch("https://6bcf8c6cd288dbac7367833f912a9dc2.balena-devices.com/")
+    fetch("https://repo-serve.herokuapp.com/")
       .then((respObject: Response) => {
         return respObject.json();
       })
